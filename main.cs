@@ -12,7 +12,7 @@ class MainClass {
     addr1.Zipcode ="44143";
 
     addr1.Display();
-    */
+    
     Console.WriteLine("Testing Person");
     Person p1 = new Person();
     p1.FirstName ="John";
@@ -58,5 +58,29 @@ class MainClass {
     s1.IsBirthday();
     s1.SetAcademicStanding();
     Console.WriteLine(s1.AcademicStanding);
+    */
+
+
+    Console.WriteLine("Testing Faculty");
+    Faculty f1 = new Faculty();
+    f1.FirstName = "Tim";
+    f1.LastName = "Burton";
+    f1.PermanentAddress.AddressLine1 = "42060 Medow Lane";
+    f1.PermanentAddress.AddressLine2 = "Memorial Township";
+    f1.PermanentAddress.City = "Parma";
+    f1.PermanentAddress.State = "OH";
+    f1.PermanentAddress.Zipcode = "44133";
+    f1.DateOfBirth = Convert.ToDateTime("05/19/1950");
+    f1.Id = "1770";
+    f1.Title = "Instructor";
+    f1.DateOfEmployment = Convert.ToDateTime("06/06/1975");
+    f1.Employer = "Tri-C";
+    f1.Intro();
+    f1.IsBirthday();
+    f1.GrantTenure();
+    f1.Promote();
+    f1.Promote();
+    f1.Promote();
+    f1.Promote();
   }
 }
